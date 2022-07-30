@@ -35,9 +35,9 @@ function App() {
 
             <button
                 className="fixed bottom-5 right-5 rounded-full bg-red-700 text-white text-xl px-4 py-2"
-                onClick={() => setModal(prev => !prev)}
+                onClick={() => setModal(true)}
             >
-                {modal ? "Close" : "Add new Product"}
+                +
             </button>
         </div>
     );

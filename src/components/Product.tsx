@@ -29,10 +29,13 @@ export default function Product({
                 <div>
                     <p>{description}</p>
                     <p>
-                        Rate:{" "}
-                        <span style={{ fontWeight: "bold" }}>
-                            {rating.rate}
-                        </span>
+                        {rating?.rate ? (
+                            <span style={{ fontWeight: "bold" }}>
+                                Rate: {rating?.rate}
+                            </span>
+                        ) : (
+                            "no rating"
+                        )}
                     </p>
                 </div>
             )}
